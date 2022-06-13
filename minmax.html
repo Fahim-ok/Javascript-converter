@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Min Max Calculator </title>
+</head>
+
+<body>
+    <div class='Header'>
+        <nav>
+            <a href="index.html">Quote Generator</a>
+            <a href="converter.html">Converter</a>
+        </nav>
+    </div>
+
+    <table width="50%">
+        <tr>
+            <td width="13%">Input Series of Number:</td>
+            <td width="29%"><input name="box1" type="text" id="box1" value="22,12,29,98,10,78,45" /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Max :</td>
+            <td>
+                <div id="max"> </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Min :</td>
+            <td>
+                <div id="min"> </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Sum :</td>
+            <td>
+                <div id="sum"> </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Average :</td>
+            <td>
+                <div id="avg"> </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Reverse Order :</td>
+            <td>
+                <div id="reverse"> </div>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td></td>
+        </tr>
+    </table>
+    <button onclick="calculate()">calculate</button>
+
+    <script>
+        function calculate() {
+            var values = document.getElementById('box1').value.split(/,/g);
+            var sum = values.reduce(function (a, b) { return parseInt(a) + parseInt(b); });
+            document.querySelector('#max').innerHTML = values.max();
+            document.querySelector('#min').innerHTML = values.min();
+            document.querySelector('#sum').innerHTML = sum;
+            document.querySelector('#avg').innerHTML = sum / values.length;
+            document.querySelector('#reverse').innerHTML = values.reverse().join(',');
+        }
+
+        Array.prototype.max = function () {
+            return Math.max.apply(null, this);
+        };
+
+        Array.prototype.min = function () {
+            return Math.min.apply(null, this);
+        };
+        document.body.style.textAlign = 'center'
+        document.body.style.fontStyle='Sans-serif'
+
+    </script>
+</body>
+
+</html>

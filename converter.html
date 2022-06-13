@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class='Header'>
+        <nav>
+            <a href="index.html">Quote Generator</a>
+            <a href="minmax.html">MinMax Calculator</a>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <h2 style="color: Green;">Weight Converter</h2>
+
+        <p>Enter a value in the Kilograms field to convert :</p>
+
+
+
+        <p>
+            <label>Kilograms</label>
+            <input id="Kilograms" type="number" placeholder="kilograms" oninput="kiloConvert(this.value)"
+                onchange="kiloConvert(this.value)" />
+        </p>
+
+        <p>Pounds: <span id="Pounds"></span></p>
+
+
+        <!-- <p>Ounces: <span id="Ounces"></span></p>
+
+
+        <p>Grams: <span id="Grams"></span></p>
+
+
+        <p>Stones: <span id="Stones"></span></p> -->
+    </div>
+    <script src="converter.js"></script>
+</body>
+
+</html>

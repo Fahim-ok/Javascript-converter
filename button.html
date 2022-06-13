@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    var inputarea = document.querySelector('#clear');
+var textarea = document.querySelector('#output');
+
+inputarea.addEventListener('click', function () {
+   textarea.value = '';
+}, false);
+
+Capitalize:
+
+var inputarea = document.querySelector('#clear');
+var textarea = document.querySelector('#output');
+
+inputarea.addEventListener('click', function () {
+   textarea.value = textarea.toUpperCase() ;
+}, false);
+
+Sort:
+
+<p id="demo"></p>
+
+<script>
+<textarea id="points" >
+points.sort(function(a, b){return a-b});
+document.getElementById("demo").innerHTML = points;
+</script>
+Reverse:
+
+<script>
+
+<textarea id="points" >
+
+function ReverseString(str) {
+
+   return str.split('').reverse().join('')
+
+}
+
+document.write(ReverseString(points))
+
+</script>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>  
+<body>
+    <!-- <form action=" " id="message">
+        Phrase:
+        <input type="text" id="message" name="changeCase" placeholder="Put Phrase Here"> -->
+    <!-- <h1 id="message">The Damn</h1> -->
+    <!-- <textarea name="jd" id="message" cols="30" rows="10"></textarea> -->
+
+
+
+    <form action="">
+      <h1>Magic</h1>
+        <p><label for="w3review">Enter Texts:</label></p>
+        <input id="message" name="w3review" value="Lowercase" onClick="convertToLowercase();" value="UpperCase" onClick="convertToUppercase();"></input>
+        
+        
+        
+      </form>
+      
+    <br>
+    <button id="btn-1">Clear</button>
+    <button id="btn-2">Capitalize</button>
+    <button>Sort</button>
+    <button>Reverse</button>
+    <button>Strip Bank</button>
+    <button>Add Number</button>
+    <button>Shuffle</button>
+<script>
+   document.body.style.background = 'yellow'
+    const textarea = document.getElementById('message');
+    textarea.value = '';
+    const btnOne = document.getElementById('btn-1');
+    btnOne.addEventListener('click', function handleClick() {
+        console.log(textarea.value);
+        textarea.value= '';
+
+
+    
+    })
+//     function toUpper(){
+
+//         function convertToLowercase() {
+// 	var data = document.getElementById("message").value;
+// 	var lowerCase = data.toLowerCase();
+// 	document.getElementById("message").value = lowerCase;
+
+// }
+
+// function convertToUppercase() {
+// 	var data = document.getElementById("message").value;
+// 	var upperCase = data.toUpperCase();
+// 	document.getElementById("message").value = upperCase;
+
+// }
+//     }
+//     const textarea = document.getElementById('message');
+//     textarea.value = '';
+//     const btntwo = document.getElementById('btn-2');
+//     function myFunction() {
+//   document.getElementById("message").style.textTransform = "capitalize";
+// }
+
+const secbutton = document.getElementById('message')
+const btnTwo = document.getElementById('btn-2');
+        // secbutton.onclick = function(){
+        //     document.input.style.backgroundColor = "capitalize"
+        // }
+        btnTwo.addEventListener('click', function handleClick() {
+        document.input.style.backgroundColor = "capitalize"
+    })
+        
+
+       
+
+
+   
+
+
+
+
+
+
+
+
+  
+
+</script>
+
+    
+</body>
+</html>

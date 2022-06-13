@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: rgb(204, 195, 95);
+}
+
+.Header {
+    text-align: center;
+}
+
+.Header nav {
+    background-color: transparent;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(16, 16, 14);
+    margin-left: 30px;
+    padding: 3px;
+}
+
+nav a:hover {
+    background-color: rgb(169, 144, 144);
+}
+
+.button-group {
+    display: flex;
+    background-color: rgba(189, 192, 16, 0.919);
+}
+
+.btn{
+    margin-left: 50px;
+}
+
+.wrapper {
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(191, 204, 105);
+    padding: 40px 50px;
+    box-shadow: 0 20px 65px rgba(209, 114, 120, 0.5);
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: rgb(113, 127, 127);
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+}
+
+.container p {
+    color: #2e2828;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.container h3 {
+    color: rgb(27, 23, 23);
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.container button {
+    background-color: rgb(129, 141, 50);
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(219, 198, 170);
+    cursor: pointer;
+}
